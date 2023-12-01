@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;200;500&family=Roboto:ital,wght@1,100;1,300&family=Sofia+Sans+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@800&family=Lumanosimo&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        
+        <header class="header">
+            <h1 class="title">Portfolio</h1>
+            <hr class="separator"> 
+            <div class="search-container">
+                <div class="search-bar">
+                <div class="searchIcone"><img src="./asset/image/loupe.svg" alt="" class="loupe"></div>
+                <div class="searchName">Paloma Sanchez</div>
+                </div>
+            </div>
+            
+            <div class="containerOnglets">
+                <p class="onglet">Alternance</p>
+                <p class="onglet">Développement web</p>
+            </div>
+            </div>
+        </header>
+
+        <div class="sectionmobile">
+            <div class="box">
+                <div class="left">
+                    <p class="apropos-mobil"> A  <br>PRO <br>POS</p>
+                  
+                    <img src="./asset/image/profil.png" alt="" class="photo">
+                </div>
+                
+                <div class="blabla">
+                    <span class="p1">Créative passionnée de communication et forte d'une formation en Art, je suis à la recherche d'une alternance en developpement web pour relever des défis stimulants et parfaire mon expérience. </span>
+                    
+                    <div class="softSkills">
+                        <p class="ongletBlack">Webdesign</p>
+                        <p class="ongletBlack">UI/UX</p>
+                        <p class="ongletBlack">Prototypage</p>
+                    </div>
+
+                    <div class="language">
+                        <img src="./asset/image/htmlcssjs.png" class="logo">
+                        <img src="./asset/image/swift.svg" class="logoswift">
+                    </div>
+
+                  
+
+                    <div class="software">
+                        <img src="./asset/image/figma-logo-0.png" class="logosoftware">
+                        <img src="./asset/image/VScode.jpg" class="logosoftware">
+
+                    </div>
+                    
+                </div>
+            </div>
+            <button id="know-more" class="mobile-button">En savoir plus</button>
+
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    let formationExpContainerMobile = document.querySelector(".formationExpContainer-mobile");
+                    let experienceSectionMobile = document.getElementById("experience-section-mobile");
+                    let enSavoirPlusButtonMobile = document.getElementById("know-more");
+        
+                   
+                    formationExpContainerMobile.style.display = "none";
+                    experienceSectionMobile.style.display = "none";
+        
+                 
+                    enSavoirPlusButtonMobile.addEventListener("click", function () {
+                        if (formationExpContainerMobile.style.display === "none") {
+                            formationExpContainerMobile.style.display = "block";
+                            experienceSectionMobile.style.display = "block";
+                        } else {
+                            formationExpContainerMobile.style.display = "none";
+                            experienceSectionMobile.style.display = "none";
+                        }
+                    });
+                });
+            </script>
+            <div class="formationExpContainer-mobile">
+                <h4>Formation</h4>
+                <div class="formation-mobile">
+                    <h5><span class="course-title-mobile">Formation en développement mobile iOs</span> <br><span class="school-mobile">Apple Fundation Program<br>2023</span></h5>
+                    <h5><span class="course-title-mobile">M1 en Art</span> <br><span class="school-mobile">Beaux Arts (Toulouse)<br>2016-2020</span></h5>
+                    <h5><span class="course-title-mobile">Bachelor en marketing et communication</span> <br><span class="school-mobile">ESCEM (Tours)<br>2016-2020</span></h5>    
+                </div>
+            </div>
+            <div class="experience-mobile" id="experience-section-mobile">
+                <h4>Experience</h4>
+                <div class="onglet-experience-mobile"> 
+                    <h5 class="ongletprojet-mobile">UI designer 
+                    <span>Graphiste </span>
+                    <span class="school-mobile">Freelance </span>
+                    <span class="school-mobile">2019/2023</span></h5> 
+                    <h5 class="ongletprojet-mobile"> Graphiste <br> <span class="school-mobile">Stage <br> 2014</span></h5>
+                </div>
+            </div>
+             
+        </div>
+
+        <div class="sectioncomputer">
+           <div class="row">
+                <div class="headingContent">
+                    <h3> A PROPOS </h3>
+                </div>
+                <div class="rightComputer">
+                    <div class="picture-container">
+                        <img src="./asset/image/photocomputer.png" alt="" class="photoComputer">
+                    </div>
+                    <div class="description">
+                        <h4>En quelques mots</h4>
+                        <p class="presentation-computer">Créative passionnée de nouvelles technologies et forte d'une formation en communication, je suis à la recherche d'une alternance en developpement web pour relever des défis stimulants et parfaire mon expérience.</p>
+                        <div class="softSkills-computer">
+                            <p class="ongletBlack-computer">Webdesign</p>
+                            <p class="ongletBlack-computer">UI/UX</p>
+                            <p class="ongletBlack-computer">Prototypage</p>
+                        </div>
+                        <div class="logicielCOntinerComputer">
+                            <img src="./asset/image/htmlcssjs.png" class="logo">
+                            <img src="./asset/image/swift.svg" class="logoswift">
+                        </div>
+                        <div class="logicielCOntinerComputer2">
+                            <img src="./asset/image/figma-logo-0.png" class="logosoftware">
+                            <img src="./asset/image/VScode.jpg" class="logosoftware">
+                        </div>
+                        <button id="en-savoir-plus-button" class="computer-button">En savoir plus</button>
+                         <div id="close-section" class="computer-button close-button" style="display: none">&#10006;</div>
+                                                  
+
+                    </div>
+                    <div class="formationExpContainer">
+                        <h4>Formation</h4>
+                        <div class="formation">
+                            <h5><span class="course-title">Formation en développement mobile iOs</span> <br><span class="school">Apple Fundation Program<br>2023</span></h5>
+                            <h5><span class="course-title">M1 en Art</span> <br><span class="school">Beaux Arts (Toulouse)<br>2016-2020</span></h5>
+                            <h5><span class="course-title">Bachelor en marketing et communication</span> <br><span class="school">ESCEM (Tours)<br>2016-2020</span></h5>    
+                        </div>
+                    </div>
+                    <div class="experience" id="experience-section">
+                        <h4>Experience</h4>
+                        <div class="onglet-experience"> 
+                            <h5 class="ongletprojet">UI designer 
+                            <span>Graphiste </span>
+                            <span class="school">Freelance </span>
+                            <span class="school">2019/2023</span></h5> 
+                            <h5 class="ongletprojet"> Graphiste <br> <span class="school">Stage <br> 2014</span></h5>
+                        </div>
+                    </div>
+                 
+              
+                </div>
+
+            </div>
+        </div>
+                   
+       
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let formationExpContainer = document.querySelector(".formationExpContainer");
+                let experienceSection = document.getElementById("experience-section");
+                let enSavoirPlusButton = document.getElementById("en-savoir-plus-button");
+                let closeSectionButton = document.getElementById("close-section");
+        
+                formationExpContainer.style.display = "none";
+                experienceSection.style.display = "none";
+        
+                enSavoirPlusButton.addEventListener("click", function () {
+                    enSavoirPlusButton.style.display = "none";
+                    closeSectionButton.style.display = "block";
+                    formationExpContainer.style.display = "block";
+                    experienceSection.style.display = "block";
+                });
+        
+                closeSectionButton.addEventListener("click", function () {
+                    closeSectionButton.style.display = "none";
+                    enSavoirPlusButton.style.display = "block";
+                    formationExpContainer.style.display = "none";
+                    experienceSection.style.display = "none";
+                });
+            });
+        </script>
+        
+            
+         
+
+        <div class="section2">
+            <h1 class="projets"> PRO <br>JETS</h1>
+            <h1 class="projet-computer">PROJET</h1>
+            <div id="projectcontainer" class="projectcontainer">
+                <div class="FCS">
+                    <img src="./asset/image/mockupcarte.svg" alt="FCS Picture" class="project-image">
+                    <h2 class="name">FCS</h2>
+                    <div class="FCSetiquettes">
+                        <p class="ongletprojet"> Logo</p>
+                        <p class="ongletprojet"> Site web</p>
+                        <p class="ongletprojet"> Photographie</p>
+                    </div>
+                    <a href="./FCS.html" class="more">
+                        <p class="ensavoirplus">EN SAVOIR PLUS</p>
+                        <img src="./asset/image/plus.svg" class="plusicone">
+                        </a>
+                </div>
+                <div class="Zold">
+                    <img src="./asset/image/zold.png" alt="Zold Picture" class="project-image">
+                    <h2 class="name">Zold</h2>
+                    <div class="Zoldetiquettes">
+                        <p class="ongletprojet"> Application iOS</p>
+                    </div>
+                    <a href="./zold.html" class="more">
+                        <p class="ensavoirplus">EN SAVOIR PLUS</p>
+                        <img src="./asset/image/plus.svg" class="plusicone">
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactContainer">
+            <img src="./asset/image/letter.jpg" alt="" class="letter">
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>Vous avez une question ? Vous souhaitez me rencontrer ?</p>
+                <p class="ongletprojet"><a href="mailto:paloma.sanchezc@icloud.com">paloma.sanchezc@icloud.com</a></p>
+            </div>
+        </div>
+        
+       
+      
+
+       
+
+  
+
+
+    
+
+
+  
+</body>
+</html>

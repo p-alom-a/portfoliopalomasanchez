@@ -1,0 +1,1301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Section HERO*/
+
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  padding-block-end: 21px;
+}
+
+.title {
+  margin-bottom: -16px;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 10em;
+}
+
+.separator {
+  width: 616px;
+  border: 1px solid #000000;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 9px 11px 0 rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+.searchName {
+  margin-right: 30px;
+  flex-grow: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.loupe {
+  margin: 10px 27px;
+  height: 33px;
+}
+
+.containerOnglets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-top: 1em;
+}
+
+.onglet {
+  display: inline;
+  align-content: center;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  opacity: 0;
+  animation: appear 3s ease-in-out forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Section A PROPOS COMPUTER */
+
+.sectioncomputer {
+width: 100%;
+
+  
+}
+
+.row{
+  display: flex;
+  margin-top: 2em;
+}
+
+
+
+.headingContent h3{
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: 52px;
+  text-align: left;
+  display: block;
+  padding-left: 1em;
+  position: sticky;
+  top: 0;
+  width: 9em;
+}
+
+@media screen and (max-width: 1100px) {
+  .headingContent h3{
+    width: 6em;
+  }
+}
+
+.picture-container{
+  grid-area: picture-container;
+  
+
+}
+
+h4{
+  font-family: 'Jost', sans-serif;
+  font-size: 34px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.description{
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+
+
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  gap: 3em;
+}
+
+.photoComputer{
+  height: auto;
+  width: 13em;
+  margin-right: 2em;
+ 
+ 
+  
+}
+
+.presentationComputerTitle{
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: 52px;
+  text-align: left;
+  display: block ruby;
+  color: black;
+  position: sticky;
+  top: O;
+  z-index: 100;
+  background-color: white;
+}
+
+
+
+
+
+.presentation-computer {
+  display: flex;
+  flex-wrap: column;
+  font-size: 125%;
+  width: 19em;
+  text-align: -webkit-left;
+  font-weight: 390;
+  font-family: 'Montserrat', sans-serif;
+  word-wrap: break-word;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.photodeprofil{
+  height: 2em;
+}
+
+.softSkills-computer {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-bottom-style: dotted;
+  border-width: 2px;
+
+}
+
+.ongletBlack-computer {
+  display: inline;
+  align-content: center;
+  background-color: #000000;
+  padding: 19px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  color: white;
+  
+}
+
+.logicielCOntinerComputer{
+
+  border-bottom-style: dotted;
+  border-width: 2px;
+  
+
+}
+
+.logicielCOntinerComputer2{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.formationExpContainer, .formationExpContainer-mobile{
+  grid-area: formation;
+ display: flex;
+ align-items: baseline;
+
+
+ 
+
+}
+.formationExpContainer-mobile{
+  padding-left: 2em;
+}
+
+
+.formationContainer h4{
+  margin-bottom: revert;
+}
+.formation, .formation-mobile{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  border-bottom-style: dotted;
+  border-width: 2px;
+
+}
+
+
+
+
+.formation h5{
+  margin-bottom: 1em;
+}
+ .course-title,.course-title-mobile {
+ 
+  font-family: 'Montserrat', sans-serif;
+  font-size: initial;
+  display: block;
+  margin-bottom: -2%;
+ }
+
+ @media screen and (max-width: 790px) {
+  .course-title{
+    font-size: 1em;
+  }
+ }
+ .intitule{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+ }
+ .school,.school-mobile{
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: lighter;
+ }
+
+ .school-mobile{
+  display: block;
+  margin-bottom: 2em;
+  
+ }
+.rightComputer{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "picture-container description ."
+    "picture-container description ."
+    "formation formation ."
+    "experience experience ."; 
+}
+
+.experience, .experience-mobile{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter; 
+  grid-area: experience;
+  display: flex;
+  align-items: baseline;
+}
+
+
+.onglet-experience,.onglet-experience-mobile{
+
+  display: flex;
+ 
+ 
+  gap: 3em;
+}
+
+.onglet-experience .ongletprojet, .ongletprojet-mobile{
+  font-weight: bold;
+  padding: 1em;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.ongletprojet-mobile{
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+
+
+
+.close-button {
+  padding: 5px 10px; 
+  width: 1em;
+  position: absolute;
+  top: 78em;
+  right: 16em;
+}
+
+.formationExpContainer {
+position: relative;
+}
+
+#en-savoir-plus-button {
+float: right; 
+}
+
+
+
+
+
+
+
+/* Section A PROPOS MOBILE */
+
+
+
+.sectionmobile {
+display: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: flex-start;
+  margin-left: 15px;
+  margin-bottom: 2em;
+
+}
+
+.blabla {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  width: 100%;
+ 
+  gap: 2em;
+ 
+  border-radius: 11px;
+  padding: 1em;
+}
+
+.p1 {
+  align-items: center;
+  text-align: left;
+  display: block;
+  width: 200px;
+  text-align: -webkit-left;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  padding-block-end: 21px;
+}
+
+.softSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  padding-block-end: 21px;
+  width: 182px;
+}
+
+.ongletBlack {
+  display: inline;
+  align-content: center;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  color: white;
+}
+
+.language {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  padding-block-end: 21px;
+  width: 182px;
+  justify-content: center;
+}
+
+.sofware {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  padding-block-end: 21px;
+  width: 182px;
+}
+
+.logo {
+  width: 20vh;
+  padding-top: 1em;
+}
+
+.logoswift{
+  width: 7vh;
+  padding-bottom: 2%;
+}
+
+.logosoftware {
+  width: 7vh;
+}
+
+.photo {
+  height: 38em;
+  margin: 0 10px;
+
+  
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.apropos-mobil {
+display: none
+  
+ 
+}
+
+
+
+
+
+
+/* Section A PROJET*/
+
+
+
+.section2 {
+  background-color: black;
+  height: 100vh;
+  margin-top: 40px;
+  width: 100%;
+}
+
+@media screen and (max-width: 930px) {
+  .section2{
+    height: 75vh;
+  }
+}
+
+.projectcontainer {
+  width: 100%;
+  background: black;
+  height: 100vh;
+  white-space: nowrap;    
+  overflow-x: scroll;
+  justify-content: center;
+  display: flex;
+  gap: 56px;
+
+   
+   
+  
+}
+
+
+.projets{
+  display: none;
+}
+
+.projet-computer 
+{
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-size: 52px;
+  text-align: left;
+  display: block;
+  padding: 1em;
+  color: white;
+  background-color: black;
+}
+
+
+.FCS,
+.Zold {
+ 
+  display: inline-block;
+  width: 367px;
+  margin: 0 15px;
+  height: 542px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+
+
+.project-image {
+  width: 100%;
+  height: 21rem;
+  object-fit: cover;
+  margin-top: -7px;
+}
+
+.ongletprojet {
+  display: inline;
+  align-content: center;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: black;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+
+.name{
+  margin: 10px;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  font-size: 34px;
+}
+
+
+.FCSetiquettes,
+.Zoldetiquettes {
+  display: flex;
+}
+
+.more{
+  display: flex;
+  align-items: self-end;
+  
+  justify-content: center;
+}
+
+
+.ensavoirplus{
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 4px;
+}
+
+.plusicone{
+width: 17px;
+}
+
+
+
+
+
+
+
+
+
+#experience-section-mobile {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 6em;
+  }
+
+  .separator {
+    width: 290px;
+  }
+
+  .section{
+    margin-bottom: 5em;
+  }
+
+  .blabla{
+    margin-left: -6px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+
+  .header {
+   
+    height: 50vh;
+  }
+
+  .searchName {
+    font-size: 1.5em;
+  }
+  .search-bar {
+    max-width: 314px;
+    padding: 0;
+  }
+
+.sectioncomputer{
+  display: none;
+}
+  .sectionmobile{
+  
+  margin-left: 0;
+
+    width: auto;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    margin-top: 20px;
+    
+  
+   
+
+}
+
+.apropos-mobil {
+  font-family: 'Jost', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  display: block;
+  margin: 10px;
+  line-height: 25px;
+  width: 100%;
+  margin-bottom: 30px;
+  
+ 
+}
+
+.apropos-computer{
+  display: none;
+}
+.p1 {
+  font-size: smaller;
+  width: 150px;
+  text-align: left;
+}
+
+.photo {
+  height: 25em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 15px;
+}
+
+.blabla {
+  margin-top: 110px;
+  margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 372px;
+    width: 100%;
+    overflow: scroll;
+    gap: 2em;
+    background-color: rgb(217 217 217 / 18%);
+    border-radius: 11px;
+    padding: 1em;
+}
+.projectcontainer {
+  width: 120%;
+  background: black;
+  height: 57vh;
+  white-space: nowrap;    
+  overflow-x: scroll;
+  justify-content: center;
+  display: block;
+  gap: 56px;
+  padding-left: 10px;
+}
+
+  .projets{
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+    text-align: left;
+    display: block;
+   
+    color: white;
+    text-underline-offset: 8px;
+    line-height: 25px;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .projet-computer{
+    display: none;
+  }
+
+.FCS,
+.Zold {
+ 
+  display: inline-block;
+  width: 265px;
+  margin: 0 15px;
+  height: 438px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+
+
+.project-image {
+  width: 89%;
+  height: 17rem;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 30px 30px 0 0 ;
+}
+
+.ongletprojet {
+  display: inline;
+  align-content: center;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: black;
+  margin: 0 auto;
+}
+
+
+.name{
+  margin: 10px;
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+
+}
+
+.mobile-button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.computer-button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.contactContainer {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 33vh;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+ 
+}
+
+
+
+.letter {
+  height: 8em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.contact p {
+  font-size: 100%;
+  text-align: -webkit-left;
+  font-weight: 390;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.contact h4 {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 530px) {
+  
+  .contact{
+    gap: 1em;
+  }
+  
+  .contactContainer{
+    flex-direction: column;
+  }
+  .letter {
+    height: 6em;
+  }
+
+  .contact h4 {
+    font-size: larger;
+  }
+  .contact p {
+    font-size: 80%;
+  }
+}
+
+
+
+
+
+/* PAGE ZOLD*/
+
+@media screen and (max-width: 790px) {
+  .zhContainer {
+      flex-direction: column-reverse;
+      margin: 3em;
+      .zhContainer {
+        gap: 1em;
+    }
+
+    .zHeroDescription1 {
+        font-size: 1em;
+        text-align: inherit;
+        width: fit-content;
+        margin-top: 1rem;
+        width: fit-content;
+    }
+
+    .zHeroDescription2 {
+        font-size: 3.5em;
+        margin-bottom: 1rem;
+    }
+
+    .zHeroDescription3 {
+        font-size: 0.8em;
+    }
+
+    .zoldHeader{
+      justify-content: center;
+      
+    }
+   
+    .objectif {
+      border-right-style: none; 
+      border-width: 0; 
+      padding-right: 0; 
+    }
+    .objectif {
+      border-right-style: dotted;
+      border-width: 2px;
+      padding-left: 2em;
+    }
+
+   
+    
+  }
+  }
+
+    
+  
+    
+
+  
+
+.zoldHero,
+.FCSHero{
+  background-color: #000000;
+  width: 100%;
+  height: 33em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+
+
+
+
+.my-icon {
+  align-self: flex-start;
+}
+
+.img-icon {
+  align-self: flex-start;
+    width: 60%; 
+    max-width: 50px; 
+    height: auto; 
+    margin-left: 2em;
+}
+
+
+
+
+ 
+
+
+.zhContainer{
+  display: flex;
+  margin: 33px 33px;
+}
+.zHeroDescription1{
+  text-align: revert;
+  color: #FFF;
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.023%;
+  width: 25em;
+  margin-right: 2em;
+  padding-top: 1%;
+  
+}
+.zHeroDescription{
+  color: #FFF;
+text-align: right;
+font-family: 'Inter', sans-serif;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 138.023%;
+text-align: revert;
+width: fit-content;
+
+}
+
+.zHeroDescription2,
+ .FCSHeroDescription2 {
+  color: #FFF;
+text-align: right;
+font-family: 'Inter', sans-serif;
+font-size: 5.5rem;
+font-weight: bolder;
+text-align: revert;
+
+}
+
+.zHeroDescription3{
+  color: #FFF;
+text-align: right;
+font-family: 'Inter', sans-serif;
+font-size: 99%
+font-style: normal;
+text-align: revert;
+font-style: italic;
+
+}
+
+
+.zHeroDescriptionContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.zoldHeader{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4em;
+  gap: 5em;
+  border-bottom: dotted;
+  border-width: 2px;
+   
+}
+
+@media screen and (max-width: 1477px) {
+  .zoldHeader{
+    justify-content: center;
+  }
+  .objectifZ{
+    margin-bottom: 4em;
+  }
+}
+.zoldContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  width: 45em;
+}
+ .contexte{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 10%;
+ }
+ .contextDescription{
+  font-weight: 390;
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  text-align: justify;
+  width: fit-content;
+ }
+.Zoldtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-size: initial;
+  display: block;
+}
+.zoldImage{
+  height: 20em;
+}
+
+.HeaderZ{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.objectifZ{
+  display: flex;
+  width: 100%;
+  height: 11.375rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 5em;
+  justify-content: space-evenly;
+}
+
+
+.objectif{
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: initial;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  border-right-style: dotted;
+  border-width: 2px;
+  padding-right: 3em;
+}
+
+
+.objectifZ .objectif:nth-child(3) {
+  border-right: none; 
+}
+.objDescription{
+  width: 16rem;
+}
+
+.numero{
+  font-size: xxx-large;
+}
+
+.zoldHeader h4:first-child  {
+  margin-left: 2em;
+}
+
+.objTitle{
+  margin-left: 3em;
+  
+}
+.objectif {
+  border-right-style: none;
+  border-width: 0;
+  padding-right: 0;
+}
+
+.containerZold{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 6em;
+ 
+}
+
+.ongletZold{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 77%;
+  color:white;
+}
+
+@media screen and (max-width: 790px) {
+  .containerZold{
+    margin: 1em;
+  }
+}
+.wireframe {
+  display: flex;
+  flex-direction: column;
+}
+
+.wireframe-container {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.wireframe-img {
+  height: 25em;
+}
+
+@media screen and (max-width: 1080px) {
+  .wireframe-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2em;
+    overflow-x: auto;
+    padding: 0 1em; /* Add padding to the left and right */
+  }
+  .HeaderZ{
+    margin-bottom: 13em;
+  }
+}
+
+.video {
+  margin-top: 2em;
+  width: 100%; /* La vidéo occupe 100% de la largeur du conteneur parent */
+  max-width: 280px; /* Ajoutez une largeur maximale pour éviter que la vidéo ne devienne trop petite */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/* Section A FCS */
+
+.FCSHeroDescription2{
+  line-height: 0.9;
+  margin-bottom: 2rem;
+  font-size: 4.5em;
+}
+
+@media screen and (max-width: 790px){
+  .FCSHeroDescription2{
+    font-size: 3.5em;
+  }
+}
+
+.FCS-container-logo{
+  display: flex;
+  flex-direction: column;
+  border-bottom: dotted;
+  border-width: 2px;
+  padding-bottom: 4em;
+}
+
+.FCS-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.image-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.rightContainerLOGO img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rightContainerLOGO {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.rightContainerLOGO img:nth-child(2) {
+  max-width: 22rem;
+  height: fit-content;
+}
+.FCS-site-container{
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  
+}
+.siteDescription {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; 
+  width: 60%; 
+  text-align: justify;
+  margin: 0 0 2em 3em;
+}
+
+.FCS-site-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
