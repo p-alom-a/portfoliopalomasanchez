@@ -371,9 +371,9 @@ h4{
   padding: 5px 10px; 
   width: 1em;
   position: absolute;
-  top: 180vh; 
+  top: 180vh; /* Ajustez cette valeur selon vos besoins */
   right: 16em;
-  cursor: pointer; 
+  cursor: pointer; /* Ajoutez ceci pour indiquer que c'est cliquable */
 }
 
 
@@ -1299,5 +1299,77 @@ font-style: italic;
   height: auto;
   display: block;
   margin: 0 auto; 
+}
+
+/* SPRINT */
+.sprint-hero{
+  text-align: revert;
+  color: #FFF;
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.023%;
+  width: 23em;
+  margin-right: 2em;
+  padding-top: 1%;
+
+}
+
+.zHeroDescriptionContainer img{
+  width: inherit;
+  height: 2em;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 790px) {
+  .sprint-hero{
+    font-size: 1em;
+        text-align: inherit;
+        width: fit-content;
+        margin-top: 1rem;
+        width: fit-content;
+  }
+}
+
+
+.link{
+  display: flex;
+ 
+  flex-direction: column;
+ 
+}
+
+.link a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  display: flex; 
+  align-items: center;
+}
+.sprint-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.sprint-content img {
+  width: 24em; 
+  height: auto;
+}
+
+.objectifs-sprint{
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
 }
 
