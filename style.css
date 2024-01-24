@@ -747,7 +747,7 @@ width: 17px;
     padding: 1em;
 }
 .projectcontainer {
-  width: 120%;
+  width: 135%;
   background: black;
   height: 57vh;
   white-space: nowrap;    
@@ -770,7 +770,7 @@ width: 17px;
     text-underline-offset: 8px;
     line-height: 25px;
     background-color: black;
-    width: 100%;
+    width: 129%;
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 40px;
